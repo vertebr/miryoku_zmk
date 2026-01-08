@@ -8,7 +8,7 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      board: '["seeeduino_xiao_ble"]'
+      board: '["xiao_ble"]'
       shield: '["xiao_ble_left","xiao_ble_right"]'
       alphas: '["ColemakDHK"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'

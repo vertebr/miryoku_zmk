@@ -1,4 +1,6 @@
 if SHIELD_XIAO_BLE_LEFT
+    config ZMK_KEYBOARD_NAME
+        default "R4WR3X_K3Y$"
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
 endif

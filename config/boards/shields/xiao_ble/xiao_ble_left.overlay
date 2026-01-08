@@ -1,14 +1,6 @@
 #include "xiao_ble.dtsi"
 
 &kscan0 {
-    wakeup-source;
-    row-gpios
-        = <&xiao_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 0
-        , <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 1
-        , <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 2
-        , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row 3
-        ;
-
     col-gpios
         = <&xiao_d 0 GPIO_ACTIVE_HIGH> // Col 0
         , <&xiao_d 1 GPIO_ACTIVE_HIGH> // Col 1

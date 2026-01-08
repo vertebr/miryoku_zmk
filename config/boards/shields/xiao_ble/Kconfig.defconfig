@@ -1,0 +1,9 @@
+if SHIELD_XIAO_BLE_LEFT
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default y
+endif
+
+if SHIELD_XIAO_BLE_LEFT || SHIELD_XIAO_BLE_RIGHT
+    config ZMK_SPLIT
+        default y
+endif

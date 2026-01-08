@@ -11,5 +11,4 @@ jobs:
       board: '["xiao_ble"]'
       shield: '["xiao_ble_left","xiao_ble_right"]'
       alphas: '["ColemakDHK"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y"]'
-      snippet: '["zmk-usb-logging"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y","CONFIG_ZMK_USB_LOGGING=y"]'

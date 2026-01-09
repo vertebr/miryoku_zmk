@@ -2,7 +2,7 @@
 # https://github.com/manna-harbour/miryoku
 
 name: 'TBKmini XIAO BLE build (logging)'
-on: [push, pull_request, workflow_dispatch]
+on: workflow_dispatch
 jobs:
   build:
     uses: ./.github/workflows/main.yml
@@ -11,4 +11,4 @@ jobs:
       board: '["xiao_ble"]'
       shield: '["xiao_ble_left","xiao_ble_right"]'
       alphas: '["ColemakDHK"]'
-      kconfig: '["CONFIG_ZMK_MOUSE=y","CONFIG_ZMK_USB_LOGGING=y"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_USB_LOGGING=y"]'

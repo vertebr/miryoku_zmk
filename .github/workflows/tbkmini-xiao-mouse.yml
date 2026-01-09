@@ -9,6 +9,6 @@ jobs:
     secrets: inherit
     with:
       board: '["xiao_ble"]'
-      shield: '["xiao_ble_left","xiao_ble_right"]'
+      shield: '["xiao_ble_left","xiao_ble_right", "settings_reset"]'
       alphas: '["ColemakDHK"]'
       kconfig: '["CONFIG_ZMK_MOUSE=y"]'
